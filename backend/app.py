@@ -17,7 +17,7 @@ app.secret_key = secrets.token_hex(32)
 CORS(app, supports_credentials=True, origins=['http://localhost:3000'])
 
 # Initialize Gemini AI with NEW API KEY
-GEMINI_API_KEY = "AIzaSyAbdhoLQOZwoqDp650XMbOKK2AybrMe0B8"
+GEMINI_API_KEY = "Your_API_Key"
 genai_client = genai.Client(api_key=GEMINI_API_KEY)
 
 print("="*60)
