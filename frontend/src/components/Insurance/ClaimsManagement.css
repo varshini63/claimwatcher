@@ -1,0 +1,250 @@
+/* Add these styles to your existing ClaimsManagement.css */
+
+/* Fraud Type Badge Styles */
+.fraud-type-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 0.85em;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.fraud-type-badge.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.fraud-type-badge.warning {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeaa7;
+}
+
+.fraud-type-badge.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.fraud-type-badge.info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #bee5eb;
+}
+
+/* ML Prediction Box in Modal */
+.ml-prediction-box {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 5px solid #007bff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-top: 15px;
+}
+
+.ml-prediction-box p {
+  margin: 12px 0;
+  line-height: 1.6;
+}
+
+.ml-prediction-box strong {
+  color: #333;
+  font-weight: 600;
+}
+
+/* ML Warning Alert */
+.ml-warning {
+  background: linear-gradient(135deg, #fff3cd 0%, #ffe69c 100%);
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 5px solid #ffc107;
+  margin-top: 15px;
+  box-shadow: 0 2px 6px rgba(255, 193, 7, 0.2);
+}
+
+.ml-warning strong {
+  color: #856404;
+  font-weight: 700;
+}
+
+/* ML Note */
+.ml-note {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 15px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 6px;
+  font-style: italic;
+  border-left: 3px solid #6c757d;
+}
+
+/* Fraud Alert Enhancement */
+.fraud-alert {
+  background: linear-gradient(135deg, #fff3cd 0%, #ffe69c 100%);
+  padding: 15px;
+  border-radius: 8px;
+  margin: 15px 0;
+  border-left: 5px solid #ffc107;
+  box-shadow: 0 2px 8px rgba(255, 193, 7, 0.15);
+  animation: pulse-alert 2s infinite;
+}
+
+@keyframes pulse-alert {
+  0%, 100% {
+    box-shadow: 0 2px 8px rgba(255, 193, 7, 0.15);
+  }
+  50% {
+    box-shadow: 0 4px 16px rgba(255, 193, 7, 0.3);
+  }
+}
+
+.fraud-alert strong {
+  color: #856404;
+  font-weight: 700;
+}
+
+/* Detail Row Enhancement for ML Predictions */
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+  align-items: center;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-row span:first-child {
+  color: #666;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.detail-row strong,
+.detail-row .fraud-type-badge {
+  font-size: 0.95em;
+}
+
+/* AI Badge Styles */
+.ai-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 0.85em;
+  display: inline-block;
+}
+
+.ai-badge.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.ai-badge.warning {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeaa7;
+}
+
+.ai-badge.info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #bee5eb;
+}
+
+/* Modal Section Enhancement */
+.modal-section {
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.modal-section:last-child {
+  border-bottom: none;
+}
+
+.modal-section h4 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Gemini Analysis Box */
+.gemini-full-analysis {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #28a745;
+  white-space: pre-wrap;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+  line-height: 1.6;
+  max-height: 500px;
+  overflow-y: auto;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Info Box Enhancement */
+.info-box {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  border-left: 5px solid #2196f3;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.15);
+}
+
+.info-box h4 {
+  color: #1565c0;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.info-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.info-box li {
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.info-box li:before {
+  content: '▸';
+  position: absolute;
+  left: 5px;
+  color: #2196f3;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .fraud-type-badge,
+  .ai-badge {
+    font-size: 0.75em;
+    padding: 3px 8px;
+  }
+  
+  .ml-prediction-box {
+    padding: 15px;
+  }
+  
+  .detail-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
